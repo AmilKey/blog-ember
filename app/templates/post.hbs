@@ -1,0 +1,10 @@
+<article class="post">
+    <header class="post-header">
+        <span class="post-meta">{{moment model.updated_at}}</span>
+        <h2 class="post-title">{{model.title}} by {{model.user.name}}</h2>
+
+    </header>
+    <section class="post-excerpt">
+        <p>{{model.description}}</p>
+    </section>
+</article>

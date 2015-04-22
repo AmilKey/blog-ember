@@ -1,0 +1,78 @@
+body
+  background url('/images/reWalls.jpg') no-repeat
+  background-size cover
+  background-position center
+  background-attachment fixed
+
+form
+  display inline-block
+  text-align center
+  width 100%
+
+.post
+  position relative
+  width 80%
+  max-width 700px
+  margin 4rem auto
+  padding-bottom 4rem
+  border-bottom #EBF2F6 1px solid
+  word-break break-word
+  font-size 0.9em
+  line-height 1.6em
+
+.post-meta
+  display inline-block
+  margin 0 0 5px 0
+  font-family 'Open Sans', sans-serif
+  font-size 1.5rem
+  color #899AA5
+
+.post-title
+  margin 0
+  font-size 3.8rem
+  line-height 1.2em
+  text-transform capitalize
+  a
+    text-decoration none
+    color #50585D
+    transition color ease 0.3s
+    background transparent
+    &:hover
+      color #57A3E8
+
+.post-excerpt
+  p
+    margin 1.6rem 0 0 0
+    font-size 0.9em
+    line-height 1.6em
+    color #fff
+  &_cabinet
+    p
+      color #000
+
+.nav
+  text-align center
+  padding 20px
+  a
+    @extend .post-title a
+    text-transform uppercase
+    border 1px solid #000
+    padding 6px
+
+
+.cabinet
+  float left
+  a
+    @extend .nav a
+    display inline-block
+    margin-top 5px
+  ul
+    text-decoration none
+    margin 0
+    padding 5px
+
+.post-edit
+  &__footer
+    a
+      @extend .post-title a
+    text-align center

@@ -1,0 +1,14 @@
+<div>
+  {{#each model as |post|}}
+    <article class="post">
+        <header class="post-header">
+            <span class="post-meta">{{moment post.updated_at}}</span>
+            <h2 class="post-title">{{#link-to 'post' post}}{{post.title}}{{/link-to}}</h2>
+
+        </header>
+        <section class="post-excerpt">
+            <p>{{post.description}}</p>
+        </section>
+    </article>
+  {{/each}}
+</div>
